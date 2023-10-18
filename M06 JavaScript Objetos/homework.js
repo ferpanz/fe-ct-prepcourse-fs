@@ -12,11 +12,11 @@ function crearGato(nombre, edad) {
       nombre: nombre,
       edad: edad,
       meow: function() {
-        return "¡Meow!";
+        return "Meow!";
       }
     };
   
-    return gato;
+    return gato
 }
     
     
@@ -28,6 +28,13 @@ function nuevoUsuario(nombre, email, password) {
    // Este debe tener las propiedades: "nombre", "email" y "password" con sus respectivos valores.
    // Retornar el objeto.
    // Tu código:
+   var user = {
+      nombre: nombre,
+      email: email,
+      password: password
+   }
+   return user;
+
 }
 
 function agregarPropiedad(objeto, propiedad) {
@@ -36,6 +43,9 @@ function agregarPropiedad(objeto, propiedad) {
    // Esta propiedad será igual al valor `null`.
    // Retornar el objeto.
    // Tu código:
+   objeto[propiedad]= null;
+   return objeto;
+
 }
 
 function invocarMetodo(objeto, metodo) {
