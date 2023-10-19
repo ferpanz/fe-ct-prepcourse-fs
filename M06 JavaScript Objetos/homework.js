@@ -80,12 +80,19 @@ function tieneEmail(objetoUsuario) {
    // Verifica si el "objetoUsuario", en su propiedad "email", posee un valor definido.
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
+
+   if (objetoUsuario.email != null) {
+      return true;
+   } else {
+      return false;
+   }
 }
 
 function tienePropiedad(objeto, propiedad) {
    // Verifica si el objeto recibido posee una propiedad con el mismo nombre que el parámetro "propiedad".
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
+   return (objeto.hasOwnProperty(propiedad));
 }
 
 function verificarPassword(objetoUsuario, password) {
